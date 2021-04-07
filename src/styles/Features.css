@@ -1,0 +1,56 @@
+.features .image {position: relative;margin-top: 30px;}
+.features .image img {width: 80%;}
+.feat {
+    background-color: #fff;
+    margin: 20px 0px 10px;
+    box-shadow: 0px 8px 12px 0px #eeeeee5e;
+    border-radius: 7px;
+    position: relative;
+    padding: 20px;
+}
+.feat::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    content: '';
+    background: none;
+    border-right: 2px solid var(--sub-color);
+    border-top: 2px solid var(--sub-color);
+}
+.feat::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 20px;
+    content: '';
+    background: none;
+    border-left: 2px solid var(--sub-color);
+    border-bottom : 2px solid var(--sub-color);
+}
+.feat b {color: var(--sub-color);}
+.feat img {width: 50px;margin-bottom: 20px;filter: drop-shadow(8px 8px 2px #ddd);}
+.feat b {display: block;}
+.features {position: relative;}
+.features h5 {color: var(--main-color);}
+.features p {font-size: 14px;margin-top: 10px;}
+.svg {
+    width: 308px !important;
+    position: absolute;
+    left: -63px;
+    top: -46px;
+    z-index: -1;
+}
+@media(max-width:414px) {
+    .features .image {text-align: center;display: none;}
+    .features .image img {margin-top: 57px !important;width: 150px;}
+    .svg 
+    {
+        left: 13px;
+        top: -100px;
+    }
+    .feat {margin: 20px 20px 10px;}
+    .feat img {width: 70px;}
+}

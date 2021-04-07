@@ -1,0 +1,28 @@
+.mobapp {position: relative;padding: 40px 0px;background-attachment: fixed;}
+.mobapp::before {
+    background-color: #ffffffe3;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.mobapp .image {position: relative;overflow: hidden;text-align: center;}
+.mobapp .image img {width: 40%;display: block;margin: auto;}
+.mobapp .image button 
+{
+    padding: 9px 35px;
+    background-color: var(--sub-color);
+    color: #fff;
+    border-radius: 25px 0px 25px 25px;
+    cursor: pointer;
+    border: none;
+}
+
+@media(max-width:414px) {
+    .mobapp .image img {
+        width: 66%;
+        margin: 20px auto;
+    }
+}

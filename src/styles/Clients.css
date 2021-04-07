@@ -1,0 +1,83 @@
+.clients {
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+.dotted {
+    position: absolute;
+    top: 65px;
+    width: 25%;
+    height: 100%;
+    right: 0;
+    filter: opacity(0.2);
+}
+.clients p {
+    line-height: 1.6em;
+    font-size: 15px;
+    color: #c0a38f;
+    margin-bottom: 20px;
+  }
+  .clients h5 {
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 20px;
+    text-align: center;
+  }
+.clients .carousel {
+    padding: 20px;
+    width: 625px;
+    border-radius: 25px 0px 25px 0px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 0px #eee;
+    margin: 30px auto 0;
+}
+  .clients .carousel-inner{
+min-height: 120px !important;
+}
+
+.clients .carousel-indicators {
+    position: absolute;
+    display: block;
+    top: -13%;
+    padding-top: 20px;
+    width: 40px;
+    left: -28%;
+}
+
+.clients .carousel-indicators li {
+width: 40px;
+height: 40px;
+margin: 7px auto;
+text-indent: 000;
+border: 1px solid #fff;
+border-radius: 50%;
+overflow: hidden;
+transition: all .4s ease-in-out;
+}
+.carousel-indicators li.active {
+background:none;
+border: 1px solid var(--sub-color);;
+}
+.carousel-indicators li img {
+width: 100%;
+height: 100%;
+text-indent: 000;
+border-radius: 50%;
+}
+sup img {width: 30px;}
+
+@media(max-width:414px) {
+  .clients {overflow: visible;}
+  .clients .carousel {width: auto;}
+  .dotted {display: none;}
+  .clients .carousel-indicators {
+    left: 23%;
+    width: auto;
+    display: inline-block;
+    margin: 0px;
+    top: unset;
+    bottom: -80px;
+  }
+  .clients .carousel-indicators li {display: inline-block;margin: 7px 2px;}
+  .clients .carousel-indicators li img {border-radius: 50%;}
+}

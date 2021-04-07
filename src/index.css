@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(./font/Poppins-Regular.ttf);
+}
+body {
+  margin: 0;
+  position: relative;
+  font-family: Poppins , sans-serif;
+  height: 3000px;
+}
+body::-webkit-scrollbar {
+  width: 9px;  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1dcce; 
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e9ecef;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #dd7230;  /* creates padding around scroll thumb */
+}
+:root {
+  --main-color:#854d27;
+  --sub-color:#dd7230;
+}
+input:focus , textarea:focus , button:focus
+ {outline: none !important;box-shadow: none !important;border-color: var(--main-color) !important;}
+
+.title {position: relative;display: inline-block;color: var(--main-color);}
+.title img {
+  width: 35px;
+  margin-left: 3px;
+}
+
+.pd {padding: 55px 0px;}
+
+.top {
+  background-color: var(--sub-color);
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  border: none;
+  position: fixed;
+  left: 30px;
+  bottom: 10%;
+  z-index: 99999;
+  transition: all .4s ease-in-out;
+}
+
+@media(max-width:414px) {
+  .top {
+    left: 15px;
+  }
+}
